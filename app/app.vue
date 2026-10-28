@@ -1,17 +1,21 @@
 <template>
-  <div class="min-h-screen bg-black text-white">
-    
-    <main class="container mx-auto px-4 pt-24 pb-12">
+    <div class="min-h-screen bg-black text-white">
 
-      <h1 class="text-4xl font-bold font-['Montserrat']">
-        John Dexter Cullados
-      </h1>
+        <main class="container mx-auto px-4 pt-24 pb-12">
 
-      <p class="text-lg italic mt-2 text-gray-400">
-        "Logic will get you from A to B. Imagination will take you everywhere."
-      </p>
+            <h1 class="text-4xl font-bold font-['Montserrat']">
+                John Dexter Cullados
+            </h1>
 
-    </main>
+            <p class="text-lg italic mt-2 text-gray-400">
+                "Logic will get you from A to B. Imagination will take you everywhere."
+            </p>
 
-  </div>
+            <img src="/images/my-profile-image.jpeg"
+                alt="John Dexter Cullados"
+                class="rounded-full w-32 h-32 object-cover" />
+
+        </main>
+
+    </div>
 </template>
