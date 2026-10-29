@@ -1,21 +1,8 @@
 <template>
-    <div class="min-h-screen bg-black text-white">
+  <div class="min-h-screen bg-black text-white flex flex-col justify-between font-['Montserrat']">
+    <navigation-bar />
 
-        <main class="container mx-auto px-4 pt-24 pb-12">
+    <NuxtPage />
 
-            <h1 class="text-4xl font-bold font-['Montserrat']">
-                John Dexter Cullados
-            </h1>
-
-            <p class="text-lg italic mt-2 text-gray-400">
-                "Logic will get you from A to B. Imagination will take you everywhere."
-            </p>
-
-            <img src="/images/my-profile-image.jpeg"
-                alt="John Dexter Cullados"
-                class="rounded-full w-32 h-32 object-cover" />
-
-        </main>
-
-    </div>
+  </div>
 </template>
