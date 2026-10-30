@@ -1,6 +1,15 @@
 <script setup>
 import { ref } from 'vue'
 
+import {
+    Home,
+    User,
+    Cpu,
+    Award,
+    Menu,
+    X
+} from 'lucide-vue-next'
+
 const isMobileMenuOpen = ref(false)
 
 const closeMobileMenu = () => {
@@ -60,7 +69,7 @@ const closeMobileMenu = () => {
                 </svg>
             </button>
 
-            
+
             <Teleport to="body">
                 <div v-if="isMobileMenuOpen" class="fixed inset-0 z-[1000] bg-black/60 backdrop-blur-sm md:hidden"
                     @click="closeMobileMenu" />
@@ -83,34 +92,43 @@ const closeMobileMenu = () => {
 
                         <!-- Navigation Links -->
                         <ul class="flex flex-col space-y-2 font-['Montserrat']">
+
                             <li>
                                 <NuxtLink to="/"
-                                    class="block py-2 px-3 rounded-lg hover:text-[#b39aa0] transition-colors"
+                                    class="flex items-center gap-3 py-2.5 px-3 rounded-lg hover:text-[#b39aa0] transition-colors"
                                     active-class="text-[#b39aa0] font-bold bg-white/5" @click="closeMobileMenu">
-                                    Home
+                                    <Home class="w-5 h-5 text-[#b39aa0]" />
+                                    <span>Home</span>
                                 </NuxtLink>
                             </li>
+
                             <li>
                                 <NuxtLink to="/about-me"
-                                    class="block py-2 px-3 rounded-lg hover:text-[#b39aa0] transition-colors"
+                                    class="flex items-center gap-3 py-2.5 px-3 rounded-lg hover:text-[#b39aa0] transition-colors"
                                     active-class="text-[#b39aa0] font-bold bg-white/5" @click="closeMobileMenu">
-                                    About Me
+                                    <User class="w-5 h-5 text-[#b39aa0]" />
+                                    <span>About Me</span>
                                 </NuxtLink>
                             </li>
+
                             <li>
                                 <NuxtLink to="/tech-stack"
-                                    class="block py-2 px-3 rounded-lg hover:text-[#b39aa0] transition-colors"
+                                    class="flex items-center gap-3 py-2.5 px-3 rounded-lg hover:text-[#b39aa0] transition-colors"
                                     active-class="text-[#b39aa0] font-bold bg-white/5" @click="closeMobileMenu">
-                                    Tech Stack
+                                    <Cpu class="w-5 h-5 text-[#b39aa0]" />
+                                    <span>Tech Stack</span>
                                 </NuxtLink>
                             </li>
+
                             <li>
                                 <NuxtLink to="/certification"
-                                    class="block py-2 px-3 rounded-lg hover:text-[#b39aa0] transition-colors"
+                                    class="flex items-center gap-3 py-2.5 px-3 rounded-lg hover:text-[#b39aa0] transition-colors"
                                     active-class="text-[#b39aa0] font-bold bg-white/5" @click="closeMobileMenu">
-                                    Certifications
+                                    <Award class="w-5 h-5 text-[#b39aa0]" />
+                                    <span>Certifications</span>
                                 </NuxtLink>
                             </li>
+                            
                         </ul>
                     </div>
 
