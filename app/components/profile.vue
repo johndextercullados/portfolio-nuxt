@@ -8,7 +8,7 @@ import { Github, Linkedin } from 'lucide-vue-next'
 
         <!-- PROFILE IMAGE -->
         <div class="w-full lg:w-5/12 text-center lg:text-right lg:pr-12">
-            <img src="/images/my-profile-image.jpeg" alt="John Dexter Cullados Profile Picture"
+            <img src="/images/my-profile-image3.jpeg" alt="John Dexter Cullados Profile Picture"
                 class="inline-block w-full max-w-[320px] h-auto rounded-[10%] shadow-2xl" />
         </div>
 
