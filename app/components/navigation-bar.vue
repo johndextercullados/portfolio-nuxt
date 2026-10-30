@@ -63,10 +63,7 @@ const closeMobileMenu = () => {
             <!-- HAMBURGER BUTTON FOR MOBILE -->
             <button type="button" class="btn btn-ghost text-white md:hidden" aria-label="Open navigation menu"
                 @click="isMobileMenuOpen = !isMobileMenuOpen">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
-                    stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-                </svg>
+                <Menu class="w-6 h-6" />
             </button>
 
 
@@ -81,12 +78,16 @@ const closeMobileMenu = () => {
                     <div>
                         <!-- HEADER INSIDE SIDEBAR -->
                         <div class="flex items-center justify-between pb-4 border-b border-gray-700 mb-6">
+
                             <span class="text-sm font-bold text-gray-400 font-['Montserrat']">
                                 JD Portfolio
                             </span>
+
+                            
+                            <!-- clickable CLOSE button -->
                             <button type="button" class="btn btn-sm btn-ghost btn-circle text-white"
                                 aria-label="Close menu" @click="closeMobileMenu">
-                                ✕
+                            <X class="w-5 h-5" />
                             </button>
                         </div>
 

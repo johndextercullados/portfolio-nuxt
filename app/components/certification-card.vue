@@ -1,4 +1,7 @@
 <script setup>
+
+import { ExternalLink, } from 'lucide-vue-next'
+
 defineProps({
     title: {
         type: String,
@@ -63,7 +66,8 @@ const openModal = (id) => {
             <div class="mt-4">
                 <a :href="credlyUrl" target="_blank" rel="noopener noreferrer"
                     class="btn btn-outline btn-sm border-white/20 text-white hover:bg-white/10">
-                    Verify Credential
+                    <span>Verify Credential</span>
+          <ExternalLink class="w-3.5 h-3.5" />
                 </a>
             </div>
 
