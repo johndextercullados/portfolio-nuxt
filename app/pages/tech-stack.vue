@@ -1,5 +1,16 @@
 <script setup>
 
+useHead({
+    title: 'Tech Stack | John Dexter Cullados',
+    htmlAttrs: { lang: 'en' }
+})
+
+useSeoMeta({
+    description: 'Explore the technologies, languages, and development tools used by John Dexter Cullados.',
+    ogTitle: 'Tech Stack | John Dexter Cullados',
+    ogDescription: 'Technologies and developer tools spanning Front End, Backend, Databases, and Development tools.',
+})
+
 // categories nung tech
 const categories = [
     {

@@ -1,3 +1,17 @@
+<script setup>
+useHead({
+    title: 'About Me | John Dexter Cullados',
+    htmlAttrs: { lang: 'en' }
+})
+
+useSeoMeta({
+    description: "Learn more about my John Dexter Cullados, a highly adaptable individual and love learning. My professional goal is in the field of Cloud Engineering and Security.",
+    ogTitle: 'About Me | John Dexter Cullados',
+    ogDescription: 'Background, personal bio, and professional aspirations of John Dexter Cullados.',
+})
+
+</script>
+
 <template>
     <main class="container mx-auto px-4 max-w-6xl py-12 pt-28">
 
@@ -64,7 +78,7 @@
                     </section>
                 </div>
             </div>
-            
+
         </div>
     </main>
 </template>

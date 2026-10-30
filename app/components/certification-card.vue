@@ -47,7 +47,7 @@ const openModal = (id) => {
 
         <div class="mt-4 text-center">
 
-            <!-- Display ng title, subtitle, and issuer date -->
+            <!-- Display the title, subtitle, and issuer date -->
             <h2 class="font-['Montserrat'] font-semibold text-lg text-white">
                 {{ title }}
             </h2>

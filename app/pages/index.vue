@@ -1,15 +1,13 @@
 <script setup>
 useHead({
-  title: 'John Dexter Cullados | Web Developer Portfolio',
-  htmlAttrs: {
-    lang: 'en',
-  },
+    title: 'Web Portfolio | John Dexter Cullados',
+    htmlAttrs: { lang: 'en', },
 })
 
 useSeoMeta({
-  description: 'Official portfolio of John Dexter Cullados showcasing software projects, skill stacks, and certifications.',
-  ogTitle: 'John Dexter Cullados | Web Developer Portfolio',
-  ogDescription: 'Explore web projects, technology stack, and IT certifications.',
+    description: 'Official web portfolio of John Dexter Cullados showcasing background, skill, tech stacks, and certifications.',
+    ogTitle: 'Web Portfolio | John Dexter Cullados',
+    ogDescription: 'Explore background, technology stack, and IT certifications.',
 })
 </script>
 

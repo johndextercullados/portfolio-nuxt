@@ -1,5 +1,16 @@
 <script setup>
 
+useHead({
+    title: 'Certifications | John Dexter Cullados',
+    htmlAttrs: { lang: 'en' }
+})
+
+useSeoMeta({
+    description: 'View IT related certifications earned by John Dexter Cullados.',
+    ogTitle: 'Certifications | John Dexter Cullados',
+    ogDescription: 'Verified credentials and badges issued by Certiport and Microsoft.',
+})
+
 // MINI DATABASE
 const certifications = [
     {
@@ -47,7 +58,7 @@ const certifications = [
 
 <template>
     <main class="container mx-auto max-w-6xl px-4 py-12 pt-28">
-        
+
         <h1 class="font-['Syncopate'] text-[#b39aa0] text-3xl md:text-5xl font-bold text-center tracking-wider mb-6">
             CERTIFICATIONS
         </h1>
