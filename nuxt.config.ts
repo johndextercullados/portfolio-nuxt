@@ -7,14 +7,27 @@ export default defineNuxtConfig({
 
     css: ['~/assets/css/main.css'],
 
-    app: {
-        head: {
-            script: [
-                { src: 'https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js', defer: true },
-                { src: 'https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js', defer: true }
-            ]
+app: {
+    head: {
+      script: [
+        {
+         src: '/newrelic.js', type: 'text/javascript' 
+        },
+
+        {
+          // 2. Three.js for Vanta Background
+          src: 'https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js',
+          defer: true
+        },
+        
+        {
+          // 3. Vanta Net library
+          src: 'https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js',
+          defer: true
         }
-    },
+      ]
+    }
+  },
 
     vite: {
         plugins: [
