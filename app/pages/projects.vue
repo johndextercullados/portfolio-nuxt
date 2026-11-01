@@ -13,25 +13,25 @@ useSeoMeta({
     ogDescription: 'Featured web and mobile software projects by John Dexter Cullados.',
 })
 
-// repo of the pre pegeant
-const repositoryUrl = 'https://github.com/johndextercullados/sdca-tabulation-prepageant'
-
 // links of the render systems
 const variants = [
     {
         name: 'Mr. & Ms. SDCA Pre-Pageant',
         description: 'A preliminary scoring platform for the Mr. & Ms. SDCA Pre-Pageant. It organizes judges’ scores and automates ranking to for a consistent evaluation process.',
         url: 'https://sdca-tabulation-prepageant.onrender.com',
+        repositoryUrl: 'https://github.com/johndextercullados/sdca-tabulation-prepageant',
     },
     {
         name: 'Mr. & Ms. SDCA Main Pageant',
         description: 'A coronation-night tabulation system for the Mr. & Ms. SDCA Pre-Pageant. It organizes judges’ scores and automates ranking to for a consistent evaluation process.',
         url: 'https://sdca-tabulation.onrender.com/mr_ms_sdca_tabulation.html',
+        repositoryUrl: 'https://github.com/mavisann/sdca-tabulation',
     },
     {
         name: 'SDCA Kulayawan Tabulation',
         description: 'A festival competition scoring platform built to handle tabulation across multiple Kulayawan competition categories.',
         url: 'https://sdca-tabulation-kulayawan.onrender.com/',
+        repositoryUrl: 'https://github.com/DominicHonrado/sdca-tabulation-kulayawan',
     },
 ]
 
@@ -112,11 +112,12 @@ const activeProject = computed(() => variants[activeVariant.value])
                             Live Tabulation Platform
                         </a>
                         <a
-                            :href="repositoryUrl"
+                            :href="activeProject.repositoryUrl"
                             target="_blank"
                             rel="noopener noreferrer"
                             class="btn btn-outline border-white/30 text-white hover:border-white hover:bg-white hover:text-black"
                         >
+                            <Github class="h-5 w-5" />
                             View Repository
                         </a>
                     </div>
