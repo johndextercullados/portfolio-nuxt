@@ -3,6 +3,7 @@ import { ref } from 'vue'
 
 import {
     Home,
+    FolderGit2,
     User,
     Cpu,
     Award,
@@ -39,18 +40,28 @@ const closeMobileMenu = () => {
                             Home
                         </NuxtLink>
                     </li>
+
                     <li>
                         <NuxtLink to="/about-me" class="hover:text-[#b39aa0] transition-colors py-2"
                             active-class="text-[#b39aa0] font-bold border-b-2 border-[#b39aa0]">
                             About Me
                         </NuxtLink>
                     </li>
+
                     <li>
                         <NuxtLink to="/tech-stack" class="hover:text-[#b39aa0] transition-colors py-2"
                             active-class="text-[#b39aa0] font-bold border-b-2 border-[#b39aa0]">
                             Tech Stack
                         </NuxtLink>
                     </li>
+
+                    <li>
+                        <NuxtLink to="/projects" class="hover:text-[#b39aa0] transition-colors py-2"
+                            active-class="text-[#b39aa0] font-bold border-b-2 border-[#b39aa0]">
+                            Projects
+                        </NuxtLink>
+                    </li>
+
                     <li>
                         <NuxtLink to="/certification" class="hover:text-[#b39aa0] transition-colors py-2"
                             active-class="text-[#b39aa0] font-bold border-b-2 border-[#b39aa0]">
@@ -83,11 +94,11 @@ const closeMobileMenu = () => {
                                 JD Portfolio
                             </span>
 
-                            
+
                             <!-- clickable CLOSE button -->
                             <button type="button" class="btn btn-sm btn-ghost btn-circle text-white"
                                 aria-label="Close menu" @click="closeMobileMenu">
-                            <X class="w-5 h-5" />
+                                <X class="w-5 h-5" />
                             </button>
                         </div>
 
@@ -122,6 +133,15 @@ const closeMobileMenu = () => {
                             </li>
 
                             <li>
+                                <NuxtLink to="/projects"
+                                    class="flex items-center gap-3 py-2.5 px-3 rounded-lg hover:text-[#b39aa0] transition-colors"
+                                    active-class="text-[#b39aa0] font-bold bg-white/5" @click="closeMobileMenu">
+                                    <FolderGit2 class="w-5 h-5 text-[#b39aa0]" />
+                                    <span>Projects</span>
+                                </NuxtLink>
+                            </li>   
+
+                            <li>
                                 <NuxtLink to="/certification"
                                     class="flex items-center gap-3 py-2.5 px-3 rounded-lg hover:text-[#b39aa0] transition-colors"
                                     active-class="text-[#b39aa0] font-bold bg-white/5" @click="closeMobileMenu">
@@ -129,7 +149,7 @@ const closeMobileMenu = () => {
                                     <span>Certifications</span>
                                 </NuxtLink>
                             </li>
-                            
+
                         </ul>
                     </div>
 
