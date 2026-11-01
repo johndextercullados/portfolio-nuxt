@@ -1,5 +1,6 @@
 <script setup>
 import { ref } from 'vue'
+import { Download, Github } from 'lucide-vue-next'
 
 useHead({
     title: 'Projects | John Dexter Cullados',
@@ -12,18 +13,19 @@ useSeoMeta({
     ogDescription: 'Featured web and mobile software projects by John Dexter Cullados.',
 })
 
+// repo of the pre pegeant
 const repositoryUrl = 'https://github.com/johndextercullados/sdca-tabulation-prepageant'
 
 // links of the render systems
 const variants = [
     {
         name: 'Mr. & Ms. SDCA Pre-Pageant',
-        description: 'A preliminary scoring platform for the Mr. & Ms. SDCA Pre-Pageant. It organizes judges’ scores and automates ranking to support a consistent evaluation process.',
+        description: 'A preliminary scoring platform for the Mr. & Ms. SDCA Pre-Pageant. It organizes judges’ scores and automates ranking to for a consistent evaluation process.',
         url: 'https://sdca-tabulation-prepageant.onrender.com',
     },
     {
         name: 'Mr. & Ms. SDCA Main Pageant',
-        description: 'A coronation-night tabulation system for real-time scoring, with a Top 5 breakdown to help present results clearly during the main pageant.',
+        description: 'A coronation-night tabulation system for the Mr. & Ms. SDCA Pre-Pageant. It organizes judges’ scores and automates ranking to for a consistent evaluation process.',
         url: 'https://sdca-tabulation.onrender.com/mr_ms_sdca_tabulation.html',
     },
     {
@@ -157,6 +159,99 @@ const activeProject = computed(() => variants[activeVariant.value])
                         </div>
                     </div>
 
+                </div>
+            </div>
+
+        </section>
+
+<!-- 2ND PROJECT DISPLAYED, THE ANCHOR POINT LCOATION FINDER -->
+        <section
+            class="bg-black/75 backdrop-blur-xl border border-white/10 rounded-2xl p-6 md:p-8 text-white shadow-2xl mb-12"
+            aria-labelledby="anchor-point-title"
+        >
+            <header class="mb-6">
+                <div class="mb-4 flex flex-wrap items-center gap-3">
+                    <span class="badge badge-outline border-[#b39aa0]/70 text-[#d3bac0]">Android App</span>
+                    <span class="badge badge-outline border-white/20 text-white/80 text-xs">Collaborative Effort</span>
+                    <span class="badge badge-outline border-white/20 text-white/80 text-xs">Native Mobile</span>
+                </div>
+                <h2 id="anchor-point-title" class="font-['Syncopate'] text-xl font-bold leading-relaxed text-[#b39aa0] md:text-3xl">
+                    Anchor Point: Location Finder App
+                </h2>
+            </header>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+                <div class="lg:col-span-5">
+                    <div class="relative w-full max-w-[320px] mx-auto p-6 rounded-3xl bg-gradient-to-b from-white/10 to-black/60 border border-white/20 shadow-[0_0_30px_rgba(255,255,255,0.1)] flex flex-col items-center justify-center overflow-hidden mb-6">
+
+                        <div class="absolute inset-0 bg-white/10 blur-2xl pointer-events-none"></div>
+
+                        <div class="relative w-[240px] h-[480px] rounded-2xl border-4 border-gray-700 bg-black shadow-2xl overflow-hidden z-10">
+                            <video autoplay loop muted playsinline class="w-full h-full object-cover">
+                                <source src="/videos/anchor-point-demo.mp4" type="video/mp4" />
+                            </video>
+                        </div>
+
+                    </div>
+
+                    <div class="flex flex-wrap justify-center gap-3 w-full">
+                        <a
+                            href="/downloads/anchor-point-dl.apk"
+                            download
+                            class="btn border-[#b39aa0] bg-[#b39aa0] text-black hover:border-[#c9b4b8] hover:bg-[#c9b4b8]"
+                        >
+                            <Download class="h-5 w-5" />
+                            Download APK
+                        </a>
+                        <a
+                            href="https://github.com/johndextercullados/Anchor-Point-Location-Finder"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="btn btn-outline border-white/30 text-white hover:border-white hover:bg-white hover:text-black"
+                        >
+                            <Github class="h-5 w-5" />
+                            View Repository
+                        </a>
+                    </div>
+                </div>
+
+                <div class="space-y-6 lg:col-span-7 font-['Montserrat']">
+                    <div>
+                        <h3 class="mb-3 font-['Montserrat'] text-xl font-semibold text-white">Overview</h3>
+                        <p class="leading-relaxed text-white/75">
+                            A SpongeBob-themed Android location finder application built with Java and Android SDK.
+                            Uses the OSMdroid mapping library to search global destinations and pin it on the map.
+                        </p>
+                    </div>
+
+                    <div>
+                        <h3 class="mb-2 font-['Montserrat'] font-semibold text-white text-base">System architecture</h3>
+                        <p class="leading-relaxed text-white/75">
+                            Built using Java, Android SDK, and XML Layouts inside Android Studio. Features custom OSMdroid
+                            marker pins, a 4-fragment navigation system (Landing, Login, Location Search, Developers),
+                            and dynamic Navigation Drawer switching based on session authentication.
+                        </p>
+                    </div>
+
+                    <div>
+                        <h3 class="mb-2 font-['Montserrat'] font-semibold text-white text-base">Team contribution</h3>
+                        <p class="leading-relaxed text-white/75">
+                            Built collaboratively in a team of four. My contribution focused on the backend logic of the app, specifically the fragment navigation and integration of the OSMdroid library.
+                        </p>
+                    </div>
+
+                    <div>
+                        <h3 class="mb-2 font-['Montserrat'] font-semibold text-white text-base">Technology</h3>
+                        <div class="flex flex-wrap gap-2">
+                            <span
+                                v-for="technology in ['Java', 'Android SDK', 'OSMdroid API', 'Android Studio', 'XML Layouts']"
+                                :key="technology"
+                                class="badge badge-outline border-white/20 text-white/80"
+                            >
+                                {{ technology }}
+                            </span>
+                        </div>
+                    </div>
                 </div>
             </div>
 
