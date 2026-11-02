@@ -8,6 +8,7 @@ useSeoMeta({
     description: 'Official web portfolio of John Dexter Cullados showcasing background, skill, tech stacks, and certifications.',
     ogTitle: 'Web Portfolio | John Dexter Cullados',
     ogDescription: 'Explore background, technology stack, and IT certifications.',
+    ogImage: '/images/my-profile-image3.jpeg',
 })
 </script>
 
