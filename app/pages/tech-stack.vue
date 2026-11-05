@@ -62,19 +62,21 @@ const categories = [
             TECH STACK
         </h1>
 
-        <section v-for="category in categories" :key="category.name"
-            class="bg-black/75 backdrop-blur-xl border border-white/10 rounded-2xl p-6 shadow-2xl mb-8">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
+            <section v-for="category in categories" :key="category.name"
+                class="bg-black/75 backdrop-blur-xl border border-white/10 rounded-2xl p-6 shadow-2xl flex flex-col justify-start">
 
-            <h2
-                class="font-['Syncopate'] text-[#b39aa0] text-xl md:text-2xl font-bold mb-4 border-b border-[#b39aa0]/30 pb-2">
-                {{ category.name }}
-            </h2>
+                <h2
+                    class="font-['Syncopate'] text-[#b39aa0] text-xl md:text-2xl font-bold mb-4 border-b border-[#b39aa0]/30 pb-2">
+                    {{ category.name }}
+                </h2>
 
-            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 justify-items-center">
-                <TechCard v-for="tech in category.technologies" :key="tech.name" :name="tech.name"
-                    :image="tech.image" />
-            </div>
-        </section>
+                <div class="flex flex-wrap justify-center gap-4 sm:gap-6 items-start mt-4">
+                    <TechCard v-for="tech in category.technologies" :key="tech.name" :name="tech.name"
+                        :image="tech.image" />
+                </div>
+            </section>
+        </div>
 
         <Footer />
 
