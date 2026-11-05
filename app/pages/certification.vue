@@ -86,5 +86,7 @@ const certifications = [
             </form>
         </dialog>
 
+        <Footer />
+
     </main>
 </template>

@@ -80,5 +80,8 @@ useSeoMeta({
             </div>
 
         </div>
+
+        <Footer />
+
     </main>
 </template>

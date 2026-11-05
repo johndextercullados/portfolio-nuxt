@@ -19,5 +19,7 @@ useSeoMeta({
         <!-- IMPORT FROM COMPONENTS -->
         <profile />
 
+        <Footer />
+
     </main>
 </template>

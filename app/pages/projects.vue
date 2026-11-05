@@ -257,5 +257,8 @@ const activeProject = computed(() => variants[activeVariant.value])
             </div>
 
         </section>
+
+        <Footer />
+        
     </main>
 </template>

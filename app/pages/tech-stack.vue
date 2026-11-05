@@ -76,5 +76,7 @@ const categories = [
             </div>
         </section>
 
+        <Footer />
+
     </main>
 </template>
